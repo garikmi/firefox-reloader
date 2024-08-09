@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="reloader.css" />
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 class="title">Reloader</h1>
+            <label class="switch">
+                <input id="toggle-button" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="buttons mt-3 grid grid-cols-6 align-middle gap-y-0.5">
+            <button  id="interval-1-button" type="button">1s</button>
+            <button  id="interval-2-button" type="button">2s</button>
+            <button  id="interval-3-button" type="button">3s</button>
+            <button  id="interval-4-button" type="button">4s</button>
+            <button  id="interval-5-button" type="button">5s</button>
+            <button id="interval-10-button" type="button">10s</button>
+            <button id="interval-20-button" type="button">20s</button>
+            <button id="interval-30-button" type="button">30s</button>
+            <button id="interval-60-button" type="button">60s</button>
+            <input id="interval-input" type="text" name="lname" maxlength="3" value="5" />
+        </div>
+
+        <div class="utility-buttons">
+            <button id="toggle-off-all-button" type="button">Toggle Off All</button>
+            <!--
+            <button id="show-button" type="button">Show All</button>
+            <button id="clear-button" type="button">Clear</button>
+            -->
+        </div>
+
+        <script src="reloader.js"></script>
+    </body>
+</html>

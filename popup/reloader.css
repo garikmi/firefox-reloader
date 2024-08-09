@@ -1,0 +1,143 @@
+body {
+    background-color: #181A1F;
+    color: #C6CCD7;
+}
+
+button {
+    border-style: none;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.title {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+    font-style: italic;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 0.17fr));
+    gap: 0.3rem 0.1rem;
+    margin-top: 0.5rem;
+}
+
+.buttons button {
+    width:  2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: #98C379;
+    color: #21252B;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+}
+
+.buttons #interval-input {
+    grid-column: span 2;
+    height: 2rem;
+    border-radius: 9999px;
+    background-color: rgba(152,195,121,0.4);
+    border: 0.2rem solid;
+    border-color: #98C379;
+    color: #C6CCD7;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    justify-self: stretch;
+    align-self: center;
+}
+
+.utility-buttons {
+    margin-top: 0.8rem;
+}
+
+#toggle-off-all-button {
+    width: 100%;
+    border-radius: 9999px;
+    font-weight: bold;
+    background-color: #1085FF;
+    color: #21252B;
+    padding: 0.4rem;
+}
+
+#show-button {
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 9999px;
+    font-weight: bold;
+    background-color: #E9D16C;
+    color: #21252B;
+    padding: 0.4rem;
+}
+
+#clear-button {
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 9999px;
+    font-weight: bold;
+    background-color: #D74E42;
+    color: #21252B;
+    padding: 0.4rem;
+}

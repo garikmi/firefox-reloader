@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "Reloader",
+    "version": "1.0",
+
+    "description": "Reload webpages at a specified interval.",
+    "homepage_url": "https://garik.me",
+
+    "icons": {
+        "48": "icons/icon-48.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/icon-48.png",
+        "default_title": "Reloader",
+        "default_popup": "popup/reloader.html"
+    },
+
+    "web_accessible_resources": [],
+
+    "background": {
+        "scripts": ["/background-script.js"],
+        "persistent": true,
+        "type": "module"
+    },
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "reloader@garik.me"
+        }
+    }
+}
